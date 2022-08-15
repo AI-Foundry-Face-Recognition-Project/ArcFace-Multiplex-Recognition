@@ -58,7 +58,7 @@ async def embedding_loop(preload):
     while True:
         result = embedding.arcface_deal(suspicion_face_queue.get())
         result_queue.put(result)
-        # print(colored(f"Embedding cost: {loop.time() - start_time}", "red"), flush=True)
+        print(colored(f"Embedding cost: {loop.time() - start_time}", "red"), flush=True)
     # [[0.30044544 0.31831665 0.30363247 0.07760544]]
 
 
