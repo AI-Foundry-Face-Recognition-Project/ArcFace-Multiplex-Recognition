@@ -123,8 +123,8 @@ print(preload.usb_camera_code)
 
 camera_dict = {}
 for code in preload.usb_camera_code:
-    camera = cv2.VideoCapture(code)
-    # camera = cv2.VideoCapture('./trump.mp4') £ use like this for videos testing
+    #camera = cv2.VideoCapture(code)
+    camera = cv2.VideoCapture('Media/trump.mp4')# £ use like this for videos testing
     camera_dict[code] = camera
 
 # =================== QUEUE ====================
